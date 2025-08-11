@@ -89,21 +89,18 @@ nav a {
     margin-bottom: 10px;
 }
 
-.introduccion button{
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 5%;
+.description a{
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(27, 27, 27);
+  border: 1px solid black;
+  text-decoration: none;
 }
 
-.introduccion button:hover{
-    background-color: rgb(24, 24, 24);
-    font-weight: bold;
-}
-
-.introduccion a:hover{
-    background-color: rgb(24, 24, 24);
-    font-weight: bold;
+.description a:hover{
+  background-color: var(--color-principal);
+  color: black;
+  font-weight: bold;
 }
 
 .introduccion img{
