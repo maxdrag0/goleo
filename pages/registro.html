@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Goleo</title>
+</head>
+<body>
+        <header>
+                <h1 class="logo"><a href="../index.html">&lt; GOLEO &gt;</a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="funciones.html">Funciones</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="descarga.html">Descarga</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>REGISTRO</h1>
+        <form action="/submit" method="post">
+            <!--BASE-->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="mail">Mail</label>
+            <input type="text" name="mail" id="mail">
+
+            <label for="telefono">Telefono</label>
+            <input type="number" name="telefono" id="telefono">
+
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni">
+
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+
+            <!--JUGADOR-->
+            <label for="posicion">Posicion</label>
+            <select name="posicion" id="posicion">
+                <option value="arquero">Arquero</option>
+                <option value="defensor">Defensor</option>
+                <option value="mediocampista">Mediocampista</option>
+                <option value="delantero">Delantero</option>
+            </select>
+
+            <label for="pierna">Pierna Habil</label>
+            <select name="pierna" id="pierna">
+                <option value="diestro">Diestro</option>
+                <option value="Zurdo">Zurdo</option>
+                <option value="ambidiestro">Ambidiestro</option>
+            </select>
+
+            <input type="submit" value="REGISTRARSE">
+        </form>
+    </main>
+    <footer>
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="funciones.html">Funciones</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="descarga.html">Descarga</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 &lt; MAD &gt; .  All rights reserved.</p>
+    </footer>
+</body>
+</html>
