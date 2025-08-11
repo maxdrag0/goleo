@@ -89,6 +89,23 @@ nav a {
     margin-bottom: 10px;
 }
 
+.introduccion button{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+}
+
+.introduccion button:hover{
+    background-color: rgb(24, 24, 24);
+    font-weight: bold;
+}
+
+.introduccion a:hover{
+    background-color: rgb(24, 24, 24);
+    font-weight: bold;
+}
+
 .introduccion img{
     height: 400px;
     width: 400px;
@@ -99,7 +116,6 @@ nav a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    
 }
 
 .card{
