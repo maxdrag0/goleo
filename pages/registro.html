@@ -3,68 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Goleo</title>
 </head>
 <body>
+    <div class="container">
+
         <header>
-                <h1 class="logo"><a href="../index.html">&lt; GOLEO &gt;</a></h1>
+            <h1 class="logo"><a href="../index.html">&lt; GOLEO &gt;</a></h1>
 
-        <nav>
-            <ul>
-                <li><a href="funciones.html">Funciones</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="reseñas.html">Reseñas</a></li>
-                <li><a href="descarga.html">Descarga</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>REGISTRO</h1>
-        <form action="/submit" method="post">
-            <!--BASE-->
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
+            <nav>
+                <ul>
+                    <li><a href="funciones.html">Funciones</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="reseñas.html">Reseñas</a></li>
+                    <li><a href="descarga.html">Descarga</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>REGISTRO</h1>
+            <div class="register-form">
+                <form action="/submit" method="post">
+                    <!--BASE-->
+                    <div class="register-row row-3">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </div>
+                        <div class="campo">
+                            <label for="dni">DNI</label>
+                            <input type="text" name="dni" id="dni">
+                        </div>
+                    </div>
+                    <div class="register-row row-2">
+                        <div class="campo">
+                            <label for="mail">Mail</label>
+                            <input type="text" name="mail" id="mail">
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="telefono">
+                        </div>
+                    </div>
+                    <div class="register-row row-2">
+                        <div class="campo">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" name="usuario" id="usuario">
+                        </div>
+                        <div class="campo">
+                            <label for="contraseña">Contraseña</label>
+                            <input type="password" name="contraseña" id="contraseña">
+                        </div>
+                    </div>
+                    <!--JUGADOR-->
+                    <div class="register-row row-2">
+                        <div class="campo">
+                            <label for="posicion">Posicion</label>
+                            <select name="posicion" id="posicion">
+                                <option value="-" disabled>-</option>
+                                <option value="arquero">Arquero</option>
+                                <option value="defensor">Defensor</option>
+                                <option value="mediocampista">Mediocampista</option>
+                                <option value="delantero">Delantero</option>
+                            </select>
+                        </div>
 
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-
-            <label for="mail">Mail</label>
-            <input type="text" name="mail" id="mail">
-
-            <label for="telefono">Telefono</label>
-            <input type="number" name="telefono" id="telefono">
-
-            <label for="dni">DNI</label>
-            <input type="text" name="dni" id="dni">
-
-            <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario">
-
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña">
-
-            <!--JUGADOR-->
-            <label for="posicion">Posicion</label>
-            <select name="posicion" id="posicion">
-                <option value="arquero">Arquero</option>
-                <option value="defensor">Defensor</option>
-                <option value="mediocampista">Mediocampista</option>
-                <option value="delantero">Delantero</option>
-            </select>
-
-            <label for="pierna">Pierna Habil</label>
-            <select name="pierna" id="pierna">
-                <option value="diestro">Diestro</option>
-                <option value="Zurdo">Zurdo</option>
-                <option value="ambidiestro">Ambidiestro</option>
-            </select>
-
-            <input type="submit" value="REGISTRARSE">
-        </form>
-    </main>
+                        <div class="campo">
+                            <label for="pierna">Pierna Habil</label>
+                            <select name="pierna" id="pierna">
+                                <option value="diestro">Diestro</option>
+                                <option value="Zurdo">Zurdo</option>
+                                <option value="ambidiestro">Ambidiestro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="register-row submit-row">
+                        <input type="submit" value="REGISTRARSE">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
     <footer>
         <nav class="nav-footer">
             <ul>

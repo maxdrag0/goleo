@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Goleo</title>
 </head>
 <body>
+    <div class="container">
         <header>
                 <h1 class="logo"><a href="../index.html">&lt; GOLEO &gt;</a></h1>
 
@@ -20,22 +21,26 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1>CONTACTO</h1>
-        <form action="/submit" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+        </header>
+        <main>
+            <h1>CONTACTO</h1>
+                <div class="contacto-form">
+                    <form action="/submit" method="post">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
 
-            <label for="mail">Mail</label>
-            <input type="text" name="mail" id="mail" placeholder="juan.perez@gmail.com">
+                        <label for="mail">Mail</label>
+                        <input type="text" name="mail" id="mail" placeholder="juan.perez@gmail.com">
 
-            <label for="mensaje">Dejanos tu mensaje o duda</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
+                        <label for="mensaje">Dejanos tu mensaje o duda</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
+                        <input type="submit" value="Enviar">
+                    </form>
+            </div>
+
+        </main>
+    </div>
     <footer>
         <nav class="nav-footer">
             <ul>
