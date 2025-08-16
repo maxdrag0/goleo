@@ -265,7 +265,7 @@ footer {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     flex-wrap: nowrap;
 }
 
@@ -299,8 +299,8 @@ footer {
 }
 
 .register-row.row-2 .campo {
-  flex: 0 0 45%;
-  min-width: 220px;
+  flex: 0 0 49%;
+  min-width: 200px;
 }
 
 .register-row.submit-row {
@@ -316,6 +316,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
   width: 280px;
+  margin-top: 5px;
 }
 
 
