@@ -28,9 +28,7 @@ body {
     flex-direction: column;
 }
 
-.container {
-  flex: 1;
-}
+
 
 form{
     display: flex;
@@ -72,7 +70,7 @@ input:focus::placeholder {
     color: rgb(29, 28, 28);
 }
 
-/* 
+/*
 
 .footer .footer__nav ul li{
     position: relative;
@@ -192,6 +190,7 @@ input:focus::placeholder {
 
 .funciones .funciones__card p{
     display: none;
+    margin: 0px;
 }
 /* FIN FUNCIONES */
 
@@ -308,6 +307,7 @@ input:focus::placeholder {
 .footer p{
     font-size: 12px;
     font-weight: bold;
+    margin: 0;
 }
 
 /* FIN FOOTER */
@@ -418,7 +418,7 @@ input:focus::placeholder {
 }
 
 @media screen and (min-width: 600px) {
-    /* container y header */
+    /* header */
     .header .header__logo{
         font-weight: bold;
         font-size: 50px;
@@ -535,8 +535,8 @@ input:focus::placeholder {
     .header{
         flex-direction: row;
         justify-content: space-between;
+        padding: 0% 5%;
     }
-    
 
     .header__nav__navbar{
         display: flex;
@@ -565,7 +565,6 @@ input:focus::placeholder {
     }
 
     .main .carousel .carousel-item img{
-        width: 90%;
         padding-bottom: 20px;
     }
 
