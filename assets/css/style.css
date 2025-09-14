@@ -19,6 +19,7 @@
 
 html, body {
     height: 100%;
+    overflow-y: scroll;
 }
 
 body {
@@ -45,7 +46,7 @@ input:focus::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px;
     border-bottom: 1px solid var(--color-principal);
     flex-wrap: wrap;
     gap: 10px
@@ -70,46 +71,21 @@ input:focus::placeholder {
     color: rgb(29, 28, 28);
 }
 
-/*
-
-.footer .footer__nav ul li{
-    position: relative;
-    padding: 0 5px;
-}
-
-.header .header__nav ul li:first-child {
-    border-top: 1px solid var(--color-principal-light);
-    padding-top: 7px;
-}
-
-.header .header__nav ul li{
-    border-bottom: 1px solid var(--color-principal-light);
-}
-
-.header .header__nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: var(--color-principal-light);
-}
-
-
-.header .header__logo a:hover,
-.header .header__nav a:hover{
-    cursor: pointer;
-    color: #1a1a1a;
-    text-decoration: dashed;
-    font-weight: 700;
-} */
-
 /* FIN HEADER - NOMBRE Y NAVEGACION */
 
 /* INTRODUCCION - DESCRIPCION E IMAGEN */
-.introduccion{
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     border-top: 1px solid var(--color-principal-light);
-    padding: 20px;
+    flex: 1;
+    padding-top: 10px;
 }
 
-
+.introduccion{
+    padding: 20px;
+}
 
 .introduccion .introduccion__description{
     text-align: center;
@@ -386,6 +362,43 @@ input:focus::placeholder {
     background-color: black;
 }
 
+/* ESTILOS RESEÑAS.HTML */
+
+.main .main__reseña{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    min-height: 30dvh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #eeeded;
+}
+
+.main .reverse{
+    flex-direction: column-reverse;
+}
+.main .main__reseña .main__reseña__foto{
+    height: 50%;
+}
+
+.main .main__reseña .main__reseña__reseña{
+    height: 50%;
+}
+
+.main .main__reseña .main__reseña__foto img{
+    max-width: 30%;
+}
+.main .main__reseña .main__reseña__reseña p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/* FIN ESTILOS RESEÑAS.HTML */
 
 
 /* ESTILOS CONTACTO.HTML */
@@ -396,18 +409,18 @@ input:focus::placeholder {
 
 .contacto-form label{
     font-weight: bold;
-    margin: 10px 0;
+    margin: 20px 0px 0px 0px;
 }
 
 .contacto-form input[type='text'],
 .contacto-form input[type='submit']{
-    width: 30dvw;
+    width: 50%;
     height: 30px;
     text-align: center;
 }
 
 .contacto-form textarea{
-    width: 30dvw;
+    width: 50%;
     height: 100px;
     margin-bottom: 10px;
     padding: 5px;
@@ -419,6 +432,10 @@ input:focus::placeholder {
 
 @media screen and (min-width: 600px) {
     /* header */
+    .header{
+        padding: 10px 40px;
+    }
+
     .header .header__logo{
         font-weight: bold;
         font-size: 50px;
@@ -529,9 +546,44 @@ input:focus::placeholder {
         display: flex;
         flex-direction: row;
     }
+
+    /* RESEÑAS.HTML */
+    .main .main__reseña{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .main__reseña .main__reseña__foto{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .main__reseña .main__reseña__foto img{
+        max-height: 80%;
+        max-width: 80%;
+
+    }
+
+    .main .main__reseña .main__reseña__reseña{
+        height: 100%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .main .main__reseña .main__reseña__reseña p{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+    /* INDEX.HTML */
     .header{
         flex-direction: row;
         justify-content: space-between;
@@ -593,11 +645,19 @@ input:focus::placeholder {
         font-size: 15px;
     }
 
+    /* REGISTRO.HTML */
     .register-row.row-2 {
         justify-content: space-between;
     }
 
+    /* RESEÑA.HTML */
+    .main .main__reseña .main__reseña__reseña p{
+        font-size: 1.5rem;
+    }
+
+    /* CONTACTO.HTML */
     .contacto-form form{
         padding-bottom: 20px;
     }
+
 }
