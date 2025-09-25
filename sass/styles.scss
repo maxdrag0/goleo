@@ -1,0 +1,14 @@
+@use "base/reset" as *;
+
+@use "utils/variables" as *;
+@use "utils/mixin" as *;
+@use "utils/keyframe" as *;
+
+@use "layout/header" as *;
+@use "layout/main" as *;
+@use "layout/footer" as *;
+
+@use 'layout/pages/index' as *;
+@use "layout/pages/opiniones" as *;
+@use "layout/pages/contacto" as *;
+@use "layout/pages/registro" as *;

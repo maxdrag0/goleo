@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/goleo.ico" type="image/x-icon">
 
     <title>Goleo</title>
 </head>
@@ -26,7 +26,7 @@
                         <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="reseñas.html">Reseñas</a>
+                        <a class="nav-link" href="Opiniones.html">Opiniones</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="descarga.html">Descarga</a>
@@ -43,50 +43,45 @@
         </header>
 
         <main class="container main">
-            <h1>REGISTRO</h1>
-            <div class="register-form">
-                <form action="/submit" method="post">
+            <h1 class="titulo-registro">REGISTRO</h1>
+                <form action="/submit" method="post" class="register-form">
                     <!--BASE-->
-                    <div class="register-row row-3">
-                        <div class="campo">
+                        <div class="campo dos_columnas">
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre">
                         </div>
-                        <div class="campo">
+                        <div class="campo dos_columnas">
                             <label for="apellido">Apellido</label>
                             <input type="text" name="apellido" id="apellido">
                         </div>
-                        <div class="campo">
+                        <div class="campo dos_columnas">
                             <label for="dni">DNI</label>
                             <input type="text" name="dni" id="dni">
                         </div>
-                    </div>
-                    <div class="register-row row-2">
-                        <div class="campo">
+
+                        <div class="campo tres_columnas">
                             <label for="mail">Mail</label>
                             <input type="text" name="mail" id="mail">
                         </div>
-                        <div class="campo">
+                        <div class="campo tres_columnas">
                             <label for="telefono">Telefono</label>
                             <input type="number" name="telefono" id="telefono">
                         </div>
-                    </div>
-                    <div class="register-row row-2">
-                        <div class="campo">
+
+                        <div class="campo tres_columnas">
                             <label for="usuario">Usuario</label>
                             <input type="text" name="usuario" id="usuario">
                         </div>
-                        <div class="campo">
+                        <div class="campo tres_columnas">
                             <label for="contraseña">Contraseña</label>
                             <input type="password" name="contraseña" id="contraseña">
                         </div>
-                    </div>
+
                     <!--JUGADOR-->
-                    <div class="register-row row-2">
-                        <div class="campo">
+                        <div class="campo tres_columnas">
                             <label for="posicion">Posicion</label>
                             <select name="posicion" id="posicion">
-                                <option value="-" disabled>-</option>
+                                <option value="" disabled selected hidden>Selecciona tu posición</option>
                                 <option value="arquero">Arquero</option>
                                 <option value="defensor">Defensor</option>
                                 <option value="mediocampista">Mediocampista</option>
@@ -94,31 +89,29 @@
                             </select>
                         </div>
 
-                        <div class="campo">
+                        <div class="campo tres_columnas">
                             <label for="pierna">Pierna Habil</label>
                             <select name="pierna" id="pierna">
+                                <option value="" disabled selected hidden>Selecciona tu pierna hábil</option>
                                 <option value="diestro">Diestro</option>
                                 <option value="Zurdo">Zurdo</option>
                                 <option value="ambidiestro">Ambidiestro</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="register-row submit-row">
+
                         <input type="submit" value="REGISTRARSE">
-                    </div>
                 </form>
-            </div>
         </main>
      <footer class="footer">
-        <nav class="footer__nav">
+        <div class="footer__nav">
             <ul>
                 <li><a href="funciones.html">Funciones</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="Opiniones.html">Opiniones</a></li>
                 <li><a href="descarga.html">Descarga</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
         <p>© 2025 &lt; MAD &gt; .  All rights reserved.</p>
     </footer>
 

@@ -1,0 +1,52 @@
+@use '../../utils/mixin' as *;
+
+.titulo-contacto{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @include respond-to(desktop){
+        padding-bottom: 20px;
+    }
+        .contacto__form__label{
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .contacto__form__inputText,
+        .contacto__form__button{
+            width: 70%;
+            height: 30px;
+            text-align: center;
+
+            @include respond-to(desktop){
+                width: 50%;
+                height: 40px;
+            }
+        }
+
+        .contacto__form__textArea{
+            width: 70%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 5px;
+
+            @include respond-to(desktop){
+                width: 50%;
+                height: 120px;
+            }
+        }
+
+        .contacto__form__button{
+            cursor: pointer;
+        }
+}

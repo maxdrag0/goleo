@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid $color-font-light;
+    flex: 1;
+    padding-top: 10px;
+
+}

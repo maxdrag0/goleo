@@ -1,0 +1,255 @@
+@use '../../utils/mixin' as *;
+@use '../../utils/variables' as *;
+
+
+.introduccion{
+        padding: 20px;
+
+        @include respond-to(tablet){
+            display: flex;
+            align-items: center;
+        }
+
+        .introduccion__description{
+            text-align: center;
+            padding: 0 10px;
+
+            @include respond-to(tablet){
+                padding: 20px;
+            }
+
+            @include respond-to(desktop){
+                text-align: left;
+            }
+
+            h2{
+                font-size: 30px;
+                margin-bottom: 15px;
+                line-height: 40px;
+                font-weight: bold;
+
+                @include respond-to(tablet){
+                    font-size: 50px;
+                }
+            }
+
+            p{
+                margin-bottom: 10px;
+                line-height: 15px;
+
+                @include respond-to(tablet){
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                @include respond-to(desktop){
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
+            a{
+                display: inline-block;
+                padding: 10px;
+                border: 1px solid black;
+                text-decoration: none;
+                margin-top: 10px;
+                background-color: $color-font-light;
+                color: $color-background-light;
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+
+                    @include respond-to(tablet){
+                        margin-right: 0px;
+                    }
+                }
+
+                &:hover{
+                    background-color: $color-background-light;
+                    color: black;
+                    font-weight: bold;
+                    border: 1px solid black;
+                }
+
+                @include respond-to(tablet){
+                    width: 50%;
+                }
+
+                @include respond-to(desktop){
+                    font-size: 18px;
+                    width: auto;
+                }
+            }
+        }
+
+        .introduccion__imagen{
+            display: none;
+
+            @include respond-to(desktop){
+                display: block;
+            }
+        }
+    }
+
+    .carousel{
+        .carousel-item{
+            img{
+                @include respond-to(desktop){
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .funciones{
+        border-top: 1px solid $color-font-light;
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+
+        @include respond-to(desktop){
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .funciones__card{
+            align-content: center;
+            width: 50%;
+
+            @include respond-to(tablet){
+                padding: 20px;
+            }
+
+            @include respond-to(desktop){
+                padding: 0 10px;
+            }
+
+            &:not(:last-child){
+                @include respond-to(desktop){
+                    border-right: 1px solid black;
+                }
+            }
+
+            img{
+                height: 50%;
+                margin-bottom: 5px;
+
+                @include respond-to(tablet){
+                    height: 75%;
+                }
+
+                @include respond-to(desktop){
+                    height: 40%;
+                }
+            }
+
+            h3{
+                font-size: 18px;
+
+                @include respond-to(tablet){
+                    font-size: 30px;
+                }
+
+                @include respond-to(desktop){
+                    font-size: 21px;
+                }
+            }
+
+            p{
+                display: none;
+                margin: 0px;
+
+                @include respond-to(desktop){
+                    display: block;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .suscribete{
+        border-top: 1px solid $color-font-light;
+        padding: 20px;
+
+        .suscribete__titulo{
+            font-size: 50px;
+        }
+
+        .suscribete__texto{
+            font-size: 17px;
+            margin: 6px 0px 12px 0px;
+
+            @include respond-to(tablet){
+                font-size: 23px;
+            }
+        }
+
+        .suscribete__form{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            @include respond-to(tablet){
+                gap: 20px;
+                flex-wrap: nowrap;
+            }
+
+            input{
+                background-color: $color-background-light;
+                padding-left: 10px;
+                min-height: 30px;
+                width: 250px;
+
+                @include respond-to(tablet){
+                    font-size: 18px;
+                }
+            }
+
+            button{
+                cursor: pointer;
+                font-weight: bold;
+                min-height: 30px;
+                width: 250px;
+                border: 1px solid black;
+                background-color: $color-font-light;
+                color: $color-background-light;
+
+                &:hover{
+                    background-color: black;
+                    color: $color-background-light;
+                }
+
+                @include respond-to(tablet){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .descarga{
+        border-bottom: 1px solid $color-font-light;
+        padding-bottom: 30px;
+
+        @include respond-to(tablet){
+            padding-top: 20px;
+        }
+
+        .descarga__titulo{
+            margin-bottom: 15px;
+            font-size: 18px;
+
+            @include respond-to(tablet){
+                font-size: 28px;
+            }
+        }
+
+        .descarga__iconos{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    }

@@ -1,0 +1,87 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include respond-to(tablet){
+        padding: 10px 40px;
+    }
+
+    @include respond-to(desktop){
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0% 5%;
+    }
+
+    .header__nav{
+        width: 100%;
+
+        .header__nav__container{
+            .header__logo{
+                align-self: flex-start;
+                font-weight: bold;
+                font-size: 35px;
+                color: $color-font-light;
+
+                &:hover{
+                    color: rgb(29, 28, 28);
+
+                }
+
+                @include respond-to(tablet){
+                    font-size: 50px;
+                }
+            }
+
+            .header__nav__navbar{
+
+                @include respond-to(desktop){
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                ul{
+                    @include respond-to(tablet){
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+
+                    li{
+                        @include respond-to(tablet){
+                            padding: 0 10px;
+                            border-bottom: none;
+                        }
+
+                        &:first-child {
+                            @include respond-to(tablet){
+                                border-top: none;
+                                padding-top: 0px;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            @include respond-to(tablet){
+                                border-right: 1px solid $color-font-light;
+                            }
+                        }
+
+                        a:not(:first-child){
+                            @include respond-to(tablet){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}

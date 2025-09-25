@@ -1,0 +1,30 @@
+@use "../utils/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: $color-font-light;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    text-align: center;
+    background-color: $color-background-light;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
