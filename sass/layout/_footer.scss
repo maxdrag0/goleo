@@ -2,7 +2,7 @@
 @use "../utils/mixin" as *;
 
 .footer{
-    background-color: #eeeded;
+    background-color: $color-background-light-footer;
     display: flex;
     flex-direction: column;
     align-items: center;

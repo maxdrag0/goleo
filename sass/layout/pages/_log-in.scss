@@ -1,0 +1,48 @@
+@use '../../utils/variables' as v;
+@use '../../utils/mixin' as *;
+@use '../../utils/keyframe' as *;
+
+.titulo-login{
+
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    background-color: v.$color-background-light-footer;
+
+    @include respond-to(tablet){
+        align-items: center;
+    }
+    .login__img{
+        display: none;
+
+        @include respond-to(tablet){
+            padding: 20px;
+            border-right: 1px solid black;
+            display: block;
+            width: 60vw;
+            max-height: 60vh;
+
+        }
+    }
+
+    .login__form{
+        padding: 10px;
+        @include respond-to(tablet){
+            width: 40vw;
+        }
+
+        .login__extra{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
