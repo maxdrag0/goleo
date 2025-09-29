@@ -477,9 +477,6 @@ input:focus::placeholder {
 .main__opiniones:nth-child(4) {
   animation-delay: 1.5s;
 }
-.main__opiniones.reverse {
-  flex-direction: column-reverse;
-}
 @media screen and (min-width: 600px) {
   .main__opiniones {
     flex-direction: row;

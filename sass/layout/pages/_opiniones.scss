@@ -27,10 +27,6 @@
         }
     }
 
-    &.reverse{
-        flex-direction: column-reverse;
-    }
-
     @include respond-to(tablet){
         & {
             flex-direction: row;
