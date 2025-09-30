@@ -1,0 +1,52 @@
+@use "../../utils/variables" as v;
+@use "../../utils/mixin" as *;
+@use "../../utils/keyframe" as *;
+
+.funciones-container{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    gap: 10px;
+    height: 100%;
+
+    .main__funciones{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+        border-left: none;
+        text-align: right;
+        opacity: 0;
+
+        &.animacion{
+            animation: fadeLeft 1s ease-out forwards;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        &.inverso{
+            flex-direction: row-reverse;
+            border-right: none;
+            border-left: 1px solid black;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: left;
+            animation: fadeRight 1s ease-out forwards;
+        }
+
+        @include respond-to(tablet){
+            height: 25%;
+        }
+
+         @include respond-to(desktop){
+            height: 35%;
+        }
+
+        .main__funciones__foto{
+
+        }
+
+        .main__funciones__texto{
+
+        }
+    }
+}

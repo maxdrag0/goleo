@@ -672,7 +672,20 @@ input:focus::placeholder {
   }
 }
 
-.login {
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 600px) {
+  .container-login {
+    height: auto;
+    width: auto;
+  }
+}
+.container-login .login {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -680,19 +693,26 @@ input:focus::placeholder {
   border-radius: 10px;
   width: 100%;
   max-height: 80vh;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   background-color: #eeeded;
 }
 @media screen and (min-width: 600px) {
-  .login {
+  .container-login .login {
+    width: 100%;
     align-items: center;
+    align-self: center;
   }
 }
-.login .login__img {
+@media screen and (min-width: 1024px) {
+  .container-login .login {
+    width: 80%;
+  }
+}
+.container-login .login .login__img {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  .login .login__img {
+  .container-login .login .login__img {
     padding: 20px;
     border-right: 1px solid black;
     display: block;
@@ -700,18 +720,58 @@ input:focus::placeholder {
     max-height: 60vh;
   }
 }
-.login .login__form {
+.container-login .login .login__form {
   padding: 10px;
 }
 @media screen and (min-width: 600px) {
-  .login .login__form {
+  .container-login .login .login__form {
     width: 40vw;
   }
 }
-.login .login__form .login__extra {
+.container-login .login .login__form .login__extra {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.funciones-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  gap: 10px;
+  height: 100%;
+}
+.funciones-container .main__funciones {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  border-left: none;
+  text-align: right;
+  opacity: 0;
+}
+.funciones-container .main__funciones.animacion {
+  animation: fadeLeft 1s ease-out forwards;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.funciones-container .main__funciones.inverso {
+  flex-direction: row-reverse;
+  border-right: none;
+  border-left: 1px solid black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+  animation: fadeRight 1s ease-out forwards;
+}
+@media screen and (min-width: 600px) {
+  .funciones-container .main__funciones {
+    height: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .funciones-container .main__funciones {
+    height: 35%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
