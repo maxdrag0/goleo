@@ -77,6 +77,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            height: 100%;
 
             &.izquierdo{
                 padding-right: 20px;
@@ -96,7 +97,6 @@
 
             @include respond-to(desktop){
                 padding-top: 0px;
-                justify-content: space-evenly;
 
 
                 &.izquierdo{
@@ -111,6 +111,18 @@
             .main__funciones__texto__titulo{
                 font-weight: bold;
                 font-style: italic;
+
+                @include respond-to(tablet){
+                    height: 25%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 2rem;
+
+                    &.titulo_derecho{
+                        flex-direction: row-reverse;
+                    }
+
+                }
             }
 
             .main__funciones__texto__phone{
@@ -118,11 +130,24 @@
                     display: none;
                 }
             }
-            .main__funciones__texto__md-bg{
+            .main__funciones__texto__tablet{
                 display: none;
 
                 @include respond-to(tablet){
                     display: block;
+                }
+
+                @include respond-to(desktop){
+                    display: none;
+                }
+            }
+
+            .main__funciones__texto__md-bg{
+                display: none;
+
+                @include respond-to(desktop){
+                    display: block;
+                    font-size: 1.2rem;
                 }
             }
         }

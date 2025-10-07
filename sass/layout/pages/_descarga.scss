@@ -1,0 +1,104 @@
+@use "../../utils/variables" as v;
+@use "../../utils/mixin" as *;
+@use "../../utils/keyframe" as *;
+
+.descarga-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+
+    @include respond-to(tablet){
+        justify-content: initial;
+    }
+
+    .main__descarga__banner{
+        width: 100%;
+        overflow: hidden;
+
+        .img-descarga{
+            width: 100%;
+        }
+    }
+
+    .main__descarga__contenido{
+        margin-top: 10px;
+
+        @include respond-to(tablet){
+            margin-top: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        @include respond-to(desktop){
+            height: 90%;
+            margin-top: 0;
+            gap: 15px;
+            justify-content: initial;
+        }
+
+        .subtitulo{
+            font-weight: bold;
+            font-style: italic;
+
+            @include respond-to(tablet){
+                font-size: 2.8rem;
+            }
+
+        }
+
+        .texto1{
+            @include respond-to(tablet){
+                display: none;
+            }
+        }
+
+        .texto2{
+            display: none;
+             @include respond-to(tablet){
+                display: block;
+                padding: 0 10px;
+                font-size: 1.8rem;
+            }
+
+            @include respond-to(desktop){
+                font-size: 1.5rem;
+
+            }
+        }
+
+
+        .descarga__iconos{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            @include respond-to(tablet){
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            @include respond-to(desktop){
+                justify-content: center;
+            }
+
+            img{
+                width: 50%;
+                cursor: pointer;
+                @include respond-to(tablet){
+                    width: 35%;
+                }
+
+                @include respond-to(tablet){
+                    width: 10%;
+                }
+            }
+        }
+    }
+}
