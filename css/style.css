@@ -738,7 +738,7 @@ input:focus::placeholder {
   display: flex;
   flex-direction: column;
   margin: 15px 0px;
-  gap: 10px;
+  gap: 30px;
   height: 100%;
 }
 .funciones-container .main__funciones {
@@ -753,6 +753,7 @@ input:focus::placeholder {
   animation: fadeLeft 1s ease-out forwards;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: -5px 5px 5px 5px rgba(24, 23, 23, 0.382);
 }
 .funciones-container .main__funciones.inverso {
   flex-direction: row-reverse;
@@ -762,6 +763,7 @@ input:focus::placeholder {
   border-bottom-left-radius: 10px;
   text-align: left;
   animation: fadeRight 1s ease-out forwards;
+  box-shadow: 5px 5px 5px 5px rgba(24, 23, 23, 0.382);
 }
 @media screen and (min-width: 600px) {
   .funciones-container .main__funciones {
@@ -770,7 +772,78 @@ input:focus::placeholder {
 }
 @media screen and (min-width: 1024px) {
   .funciones-container .main__funciones {
-    height: 35%;
+    height: 300px;
+  }
+}
+.funciones-container .main__funciones .main__funciones__foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .funciones-container .main__funciones .main__funciones__foto {
+    width: 30%;
+  }
+}
+.funciones-container .main__funciones .main__funciones__foto .imagen {
+  width: 100%;
+  height: 100%;
+}
+.funciones-container .main__funciones .main__funciones__foto .imagen.izquierda {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.funciones-container .main__funciones .main__funciones__foto .imagen.derecha {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.funciones-container .main__funciones .main__funciones__texto {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.funciones-container .main__funciones .main__funciones__texto.izquierdo {
+  padding-right: 20px;
+  box-shadow: -5px 0 0 0 rgba(24, 23, 23, 0.382) inset;
+}
+.funciones-container .main__funciones .main__funciones__texto.derecho {
+  padding-left: 20px;
+  box-shadow: 5px 0 0 0 rgba(24, 23, 23, 0.382) inset;
+}
+@media screen and (min-width: 600px) {
+  .funciones-container .main__funciones .main__funciones__texto {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .funciones-container .main__funciones .main__funciones__texto {
+    padding-top: 0px;
+    justify-content: space-evenly;
+  }
+  .funciones-container .main__funciones .main__funciones__texto.izquierdo {
+    padding-left: 20px;
+  }
+  .funciones-container .main__funciones .main__funciones__texto.derecho {
+    padding-right: 20px;
+  }
+}
+.funciones-container .main__funciones .main__funciones__texto .main__funciones__texto__titulo {
+  font-weight: bold;
+  font-style: italic;
+}
+@media screen and (min-width: 600px) {
+  .funciones-container .main__funciones .main__funciones__texto .main__funciones__texto__phone {
+    display: none;
+  }
+}
+.funciones-container .main__funciones .main__funciones__texto .main__funciones__texto__md-bg {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .funciones-container .main__funciones .main__funciones__texto .main__funciones__texto__md-bg {
+    display: block;
   }
 }
 
