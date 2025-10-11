@@ -41,13 +41,13 @@
             <h1 class="titulo-contacto">CONTACTO</h1>
                     <form action="./contacto-exito.html" method="post" class="contacto__form" data-netlify="true" netlify>
                         <label for="nombre" class="contacto__form__label">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" class="contacto__form__inputText">
+                        <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" class="contacto__form__inputText" required>
 
                         <label for="mail" class="contacto__form__label">Mail</label>
-                        <input type="text" name="mail" id="mail" placeholder="juan.perez@gmail.com" class="contacto__form__inputText">
+                        <input type="text" name="mail" id="mail" placeholder="juan.perez@gmail.com" class="contacto__form__inputText" required>
 
                         <label for="mensaje" class="contacto__form__label">Dejanos tu mensaje o duda</label>
-                        <textarea name="mensaje" id="mensaje" class="contacto__form__textArea"></textarea>
+                        <textarea name="mensaje" id="mensaje" class="contacto__form__textArea" required></textarea>
 
                         <div class="captcha-container">
                             <div data-netlify-recaptcha="true" class="captcha"></div>

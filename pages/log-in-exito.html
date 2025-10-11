@@ -20,7 +20,7 @@
                     <div class="collapse navbar-collapse header__nav__navbar" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link"  href="funciones.html">Funciones</a>
+                        <a class="nav-link" href="funciones.html">Funciones</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="opiniones.html">Opiniones</a>
@@ -39,30 +39,9 @@
             </nav>
         </header>
 
-
-        <main class="container main">
-
-            <div class="container-login">
-                <div class="login">
-                    <img src="../assets/img/log-in.png" alt="Futbolista con celular iniciando sesión" class="login__img">
-                    <form action="./log-in-exito.html" method="post" class="login__form" data-netlify="true" netlify>
-                    <h1 class="titulo-login">Inicia sesión</h1>
-
-                        <label for="usuario">Usuario o Email</label>
-                        <input type="text" id="usuario" name="usuario" required>
-
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required>
-
-                        <button type="submit" class="btn">Ingresar</button>
-                        <div class="login__extra">
-                            <a href="./recordar-contrasenia.html">¿Olvidaste tu contraseña?</a>
-                            <a href="./registro.html">Regístrate</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
+        <main class="container main mensaje-container">
+            <h1>✅ Inicio de sesión exitoso</h1>
+            <p>Serás redirigido automáticamente al inicio...</p>
         </main>
     <footer class="footer">
         <div class="footer__nav">
@@ -77,5 +56,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 2000);
+    </script>
 </body>
 </html>
