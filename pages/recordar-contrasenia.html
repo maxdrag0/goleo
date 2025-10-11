@@ -48,8 +48,10 @@
                         <label for="usuario">Ingresá tu suario o Email</label>
                         <input type="text" id="usuario" name="usuario" required>
                     </div>
-
-                    <div data-netlify-recaptcha="true"></div>
+                    <div class="captcha-container">
+                        <div data-netlify-recaptcha="true" class="captcha"></div>
+                        
+                    </div>
 
                     <button type="submit" class="btn-recuperar">
                         <a href="./log-in.html">Recuperar</a>

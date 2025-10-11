@@ -1069,6 +1069,16 @@ input:focus::placeholder {
     text-align: start;
   }
 }
+.recuperar-container .recuperar__form .captcha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.recuperar-container .recuperar__form .captcha-container .captcha {
+  width: 100%;
+}
 .recuperar-container .recuperar__form .btn-recuperar {
   height: 30px;
   cursor: pointer;
