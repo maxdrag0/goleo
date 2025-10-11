@@ -2,10 +2,7 @@
 @use "../utils/mixin" as *;
 
 .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, column);
     padding: 10px;
     flex-wrap: wrap;
     gap: 10px;

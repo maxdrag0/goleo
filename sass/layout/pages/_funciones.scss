@@ -45,9 +45,7 @@
         }
 
         .main__funciones__foto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(center, center, row);
             width: 100%;
 
             @include respond-to(tablet){

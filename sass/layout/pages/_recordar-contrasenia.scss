@@ -4,11 +4,8 @@
 
 .recuperar-container{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    @include flex(center, center, column);
+
     @include respond-to(tablet){
         height: 30%;
     }
@@ -48,10 +45,7 @@
         }
 
         .input{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(center, center, column);
             gap: 5px;
 
             @include respond-to(tablet){
@@ -67,6 +61,7 @@
                 width: 100%;
                 height: 30px;
                 text-align: center;
+                padding: 10px;
 
                 @include respond-to(tablet){
                     width: 100%;
@@ -75,9 +70,8 @@
             }
         }
         .captcha-container{
-              display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(center, center, row);
+
                 width: 100%;
                 overflow: hidden;
 
@@ -86,6 +80,8 @@
                 }
 
                 @include respond-to(tablet) {
+                    justify-content: flex-start;
+
                     .captcha {
                         transform: scale(1);
                     }
@@ -96,7 +92,7 @@
         .btn-recuperar{
             height: 30px;
             cursor: pointer;
-            
+
             &:hover{
                     background-color: rgb(162, 157, 157);
             }
@@ -104,19 +100,14 @@
                 position: absolute;
                 right: 20px;
                 bottom: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(center, center, row);
                 padding: 10px;
             }
 
             a{
                 text-decoration: none;
                 color: black;
-
-                
             }
-            
         }
     }
 }

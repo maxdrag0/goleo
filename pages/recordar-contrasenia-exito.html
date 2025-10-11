@@ -39,25 +39,10 @@
             </nav>
         </header>
 
-        <main class="container main">
-            <div class="recuperar-container">
-                <form action="./recordar-contrasenia-exito.html" method="post" class="recuperar__form" data-netlify="true" netlify>
-                    <h1 class="titulo-recuperar">Recuperá tu cuenta</h1>
-
-                    <div class="input">
-                        <label for="usuario">Ingresá tu usuario o email</label>
-                        <input type="text" id="usuario" name="usuario" required>
-                    </div>
-                    <div class="captcha-container">
-                        <div data-netlify-recaptcha="true" class="captcha"></div>
-                    </div>
-
-                    <button type="submit" class="btn-recuperar">
-                        Recuperar
-                    </button>
-                </form>
-            </div>
-
+        <main class="container main mensaje-container">
+            <h1>✅ ¡Solicitud enviada!</h1>
+            <p>En breve recibirás un correo con las instrucciones para recuperar tu cuenta.</p>
+            <p>Serás redirigido automáticamente al inicio...</p>
         </main>
     <footer class="footer">
         <div class="footer__nav">
@@ -72,5 +57,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 2000);
+    </script>
 </body>
 </html>
