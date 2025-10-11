@@ -549,6 +549,7 @@ input:focus::placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
   .contacto__form {
@@ -589,7 +590,7 @@ input:focus::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70%;
   overflow: hidden;
   margin-bottom: 10px;
 }
@@ -599,6 +600,11 @@ input:focus::placeholder {
 @media screen and (min-width: 600px) {
   .contacto__form .captcha-container .captcha {
     transform: scale(1);
+  }
+}
+@media screen and (min-width: 600px) {
+  .contacto__form .captcha-container {
+    width: 50%;
   }
 }
 .contacto__form .contacto__form__button {
