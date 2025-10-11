@@ -2,9 +2,6 @@
 @use '../../utils/mixin' as *;
 @use '../../utils/keyframe' as *;
 
-.titulo-login{
-
-}
 .container-login{
     display: flex;
     justify-content: center;
@@ -54,8 +51,31 @@
 
         .login__form{
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
             @include respond-to(tablet){
                 width: 40vw;
+            }
+
+            input{
+                text-align: center;
+                width: 80%;
+            }
+
+            button{
+                cursor: pointer;
+                border: 1px solid black;
+                background-color: rgb(213, 208, 208);
+                width: 80%;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: rgb(162, 157, 157);
+                }
             }
 
             .login__extra{

@@ -650,23 +650,24 @@ input:focus::placeholder {
   color: #444444;
   text-align: center;
 }
-.register-form input[type=submit] {
-  width: 80%;
+.register-form a {
+  align-self: center;
+  grid-column: 1/-1;
   padding: 12px 28px;
+  border: 1px solid black;
   border-radius: 4px;
-  border: 1px solid #000;
   background: #444444;
   color: #fafafa;
   font-weight: bold;
   cursor: pointer;
   margin-top: 5px;
+  text-decoration: none;
 }
-.register-form input[type=submit]:hover {
+.register-form a:hover {
   background-color: black;
 }
 @media screen and (min-width: 600px) {
-  .register-form input[type=submit] {
-    grid-column: 1/-1;
+  .register-form a {
     justify-self: center;
     width: auto;
   }
@@ -722,11 +723,30 @@ input:focus::placeholder {
 }
 .container-login .login .login__form {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 @media screen and (min-width: 600px) {
   .container-login .login .login__form {
     width: 40vw;
   }
+}
+.container-login .login .login__form input {
+  text-align: center;
+  width: 80%;
+}
+.container-login .login .login__form button {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(213, 208, 208);
+  width: 80%;
+  font-weight: bold;
+}
+.container-login .login .login__form button:hover {
+  background-color: rgb(162, 157, 157);
 }
 .container-login .login .login__form .login__extra {
   display: flex;
@@ -972,6 +992,104 @@ input:focus::placeholder {
   .descarga-container .main__descarga__contenido .descarga__iconos img {
     width: 10%;
   }
+}
+
+.recuperar-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .recuperar-container {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+}
+.recuperar-container .recuperar__form {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #eeeded;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form {
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form {
+    width: 80%;
+    height: 80%;
+  }
+}
+.recuperar-container .recuperar__form .titulo-recuperar {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
+}
+.recuperar-container .recuperar__form .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form .input {
+    width: 100%;
+    align-items: start;
+  }
+}
+.recuperar-container .recuperar__form .input label {
+  font-weight: bold;
+}
+.recuperar-container .recuperar__form .input input {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form .input input {
+    width: 100%;
+    text-align: start;
+  }
+}
+.recuperar-container .recuperar__form .btn-recuperar {
+  height: 30px;
+  cursor: pointer;
+}
+.recuperar-container .recuperar__form .btn-recuperar:hover {
+  background-color: rgb(162, 157, 157);
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form .btn-recuperar {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+.recuperar-container .recuperar__form .btn-recuperar a {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
