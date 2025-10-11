@@ -585,6 +585,22 @@ input:focus::placeholder {
     height: 120px;
   }
 }
+.contacto__form .captcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.contacto__form .captcha-container .captcha {
+  transform: scale(0.85);
+}
+@media screen and (min-width: 600px) {
+  .contacto__form .captcha-container .captcha {
+    transform: scale(1);
+  }
+}
 .contacto__form .contacto__form__button {
   cursor: pointer;
 }
@@ -1078,7 +1094,6 @@ input:focus::placeholder {
 }
 .recuperar-container .recuperar__form .captcha-container .captcha {
   transform: scale(0.85);
-  transform-origin: 0 0;
 }
 @media screen and (min-width: 600px) {
   .recuperar-container .recuperar__form .captcha-container .captcha {

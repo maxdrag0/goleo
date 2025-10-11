@@ -83,14 +83,13 @@
 
                 .captcha {
                     transform: scale(0.85);
-                    transform-origin: 0 0;
                 }
 
                 @include respond-to(tablet) {
                     .captcha {
                         transform: scale(1);
                     }
-  }
+                }
         }
 
 
