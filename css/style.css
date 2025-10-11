@@ -602,7 +602,7 @@ input:focus::placeholder {
     transform: scale(1);
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .contacto__form .captcha-container {
     width: 50%;
   }
