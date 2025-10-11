@@ -1071,13 +1071,19 @@ input:focus::placeholder {
 }
 .recuperar-container .recuperar__form .captcha-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 80%;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 .recuperar-container .recuperar__form .captcha-container .captcha {
-  width: 100%;
+  transform: scale(0.85);
+  transform-origin: 0 0;
+}
+@media screen and (min-width: 600px) {
+  .recuperar-container .recuperar__form .captcha-container .captcha {
+    transform: scale(1);
+  }
 }
 .recuperar-container .recuperar__form .btn-recuperar {
   height: 30px;
