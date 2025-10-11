@@ -41,13 +41,15 @@
 
         <main class="container main">
             <div class="recuperar-container">
-                <form action="/recuperar" method="post" class="recuperar__form">
+                <form action="/recuperar" method="post" class="recuperar__form" data-netlify="true" netlify>
                     <h1 class="titulo-recuperar">Recuperá tu cuenta</h1>
 
                     <div class="input">
                         <label for="usuario">Ingresá tu suario o Email</label>
                         <input type="text" id="usuario" name="usuario" required>
                     </div>
+
+                    <div data-netlify-recaptcha="true"></div>
 
                     <button type="submit" class="btn-recuperar">
                         <a href="./log-in.html">Recuperar</a>

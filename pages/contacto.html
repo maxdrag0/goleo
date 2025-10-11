@@ -39,7 +39,7 @@
     </header>
     <main class="container main">
             <h1 class="titulo-contacto">CONTACTO</h1>
-                    <form action="/submit" method="post" class="contacto__form"  data-netlify="true" netlify>
+                    <form action="/submit" method="post" class="contacto__form" data-netlify="true" netlify>
                         <label for="nombre" class="contacto__form__label">Nombre</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" class="contacto__form__inputText">
 
@@ -48,6 +48,8 @@
 
                         <label for="mensaje" class="contacto__form__label">Dejanos tu mensaje o duda</label>
                         <textarea name="mensaje" id="mensaje" class="contacto__form__textArea"></textarea>
+
+                        <div data-netlify-recaptcha="true"></div>
 
                         <input type="submit" value="Enviar" class="contacto__form__button">
                     </form>
