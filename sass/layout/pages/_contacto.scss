@@ -12,6 +12,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
+
 
     @include respond-to(desktop){
         padding-bottom: 20px;
@@ -50,7 +52,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 70%;
             overflow: hidden;
             margin-bottom: 10px;
 
@@ -61,6 +63,12 @@
             @include respond-to(tablet) {
                 .captcha {
                     transform: scale(1);
+                }
+            }
+
+            @include respond-to(tablet) {
+                width: 50%;
+                .captcha {
                 }
             }
         }
