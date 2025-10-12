@@ -196,6 +196,18 @@ input:focus::placeholder {
   }
 }
 
+.titulo_index {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  .titulo_index {
+    font-size: 50px;
+  }
+}
+
 .introduccion {
   padding: 20px;
 }
@@ -446,6 +458,18 @@ input:focus::placeholder {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+.titulo-opiniones {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  .titulo-opiniones {
+    font-size: 50px;
+  }
 }
 
 .main__opiniones {
@@ -777,6 +801,18 @@ input:focus::placeholder {
   justify-content: center;
 }
 
+.titulo-funciones {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  .titulo-funciones {
+    font-size: 50px;
+  }
+}
+
 .funciones-container {
   display: flex;
   flex-direction: column;
@@ -922,6 +958,7 @@ input:focus::placeholder {
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 600px) {
   .descarga-container {

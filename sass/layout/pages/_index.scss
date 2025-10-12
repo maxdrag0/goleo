@@ -1,6 +1,16 @@
 @use '../../utils/mixin' as *;
 @use '../../utils/variables' as *;
 
+.titulo_index{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 30px;
+
+    @include respond-to(tablet){
+                    font-size: 50px;
+                }
+}
 
 .introduccion{
         padding: 20px;

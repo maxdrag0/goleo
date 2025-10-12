@@ -8,6 +8,7 @@
     width: 100%;
     height: 100%;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 
     @include respond-to(tablet){
         justify-content: initial;
